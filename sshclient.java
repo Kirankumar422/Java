@@ -41,7 +41,7 @@ public class sshclient {
             session = jsch.getSession(user,host,22);
             session.setPassword(password);
             session.setConfig(config);
-            //session.setKnow(new ByteArrayInputStream(knownHostPublicKey.getBytes()));
+            /*session.setKnow(new ByteArrayInputStream(knownHostPublicKey.getBytes()));*/
             session.connect();
             System.out.println("Connected to "+user);
             
